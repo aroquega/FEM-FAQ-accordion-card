@@ -29,7 +29,7 @@ body {
 .container {
     display: grid;
     grid-template: 1fr 40px / 1fr;
-    background: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%)) no-repeat;
+    background: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%)) no-repeat fixed;
 }
 
 .container__footer {
@@ -40,20 +40,30 @@ body {
     position: relative;
     border-radius: 10px;
     background-color: white;
-    padding: 12rem 2rem 2rem;
-    margin: 12rem 2rem 2rem 2rem;
+    padding: 13.5rem 2rem 5rem 2rem;
+    margin: 14rem 2rem 2rem 2rem;
     box-shadow: 0 15px 30px rgba(0,0,0,0.2);
 }
 
 .accordion-card__title {
     text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
 }
 
 .card__top-image {
     position: absolute;
-    left: 50%;
-    top: 0;
+    left: 45%;
+    top: -10px;
     transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.card__top-image-shadow {
+    position: absolute;
+    left: 45%;
+    top: -5px;
+    transform: translateX(-45%);
 }
 
 .accordion {
