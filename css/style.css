@@ -68,10 +68,28 @@ body {
     color: var(--very-dark-graish-blue);
 }
 
+.accordion__summary.selected {
+    font-weight: 700;
+}
+
 .accordion__details {
     color: var(--dark-grayish-blue);
     font-weight: 400;
     font-size: 1.2rem;
     margin-right: 4rem;
-    padding-bottom: 1.5rem;
+    height: 0;
+    overflow-y: hidden;
+    transition: 0.2s ease-in-out;
+}
+
+.accordion__details.hidden {
+    margin-bottom: 1.5rem;
+}
+
+.accordion__arrow {
+    transition: 0.2s ease-in-out;
+}
+
+.accordion__arrow.selected {
+    transform: rotate(-180deg);
 }
