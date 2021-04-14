@@ -32,17 +32,26 @@ body {
     background: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%)) no-repeat fixed;
 }
 
+.center {
+    display: flex;
+    justify-content: center;
+    padding: 5rem 0rem;
+}
+
 .container__footer {
     text-align: center;
 }
 
 .card {
-    position: relative;
+    display: grid;
     border-radius: 10px;
     background-color: white;
-    padding: 13.5rem 2rem 5rem 2rem;
-    margin: 14rem 2rem 2rem 2rem;
+    max-width: 47rem;
     box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.card__top {
+    position: relative;
 }
 
 .accordion-card__title {
