@@ -1,5 +1,5 @@
 .card {
-    grid-template: 1fr / 40rem 1fr;
+    grid-template: 1fr / 1fr 1fr;
     max-width: 100rem;
 }
 
@@ -16,14 +16,20 @@
 
 .card__top-image {
     left: -8rem;
-    top: 0;
+    top: 20%;
     transform: translate(0,0);
+}
+
+.card__top-image-shadow {
+    left: -27.5%;
+    top: -50%;
+    object-fit: cover;
 }
 
 .illustration__box {
     position: absolute;
     left: 0;
-    top: 28%;
+    top: 45%;
     width: 19rem;
     height: 18rem;
     z-index: 2;

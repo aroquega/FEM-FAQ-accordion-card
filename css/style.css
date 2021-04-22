@@ -75,6 +75,11 @@ body {
     transform: translateX(-45%);
 }
 
+.card__body {
+    padding: 10rem;
+    padding-left: 0;
+}
+
 .accordion {
     border-bottom: 1px solid var(--light-grayish-blue);
 }
